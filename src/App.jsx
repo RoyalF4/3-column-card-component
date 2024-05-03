@@ -3,6 +3,7 @@ import Card from './Card';
 function App() {
   return (
     <main className="card-container">
+      <h1 className="sr-only">3 column card component</h1>
       <Card type="sedans">
         Choose a sedan for its affordability and excellent fuel economy. Ideal
         for cruising in the city or on your next road trip.

@@ -86,13 +86,13 @@ body {
   align-self: start;
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
-  border: 2px solid white;
+  border: 2px solid var(--very-light-grey);
   font-size: 0.9rem;
 }
 
 .card__link:hover {
   background-color: transparent;
-  color: white;
+  color: var(--very-light-grey);
 }
 
 @media (max-width: 25rem) {
@@ -103,4 +103,15 @@ body {
   .card {
     height: 100%;
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
