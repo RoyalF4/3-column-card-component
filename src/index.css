@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --very-light-grey: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+body {
+  font-family: 'Lexend Deca';
+  background-color: var(--very-light-grey);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.sedans-text {
+  color: var(--bright-orange);
+}
+
+.suvs-text {
+  color: var(--dark-cyan);
+}
+
+.luxury-text {
+  color: var(--very-dark-cyan);
+}
+
+.card-container {
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card {
+  height: 500px;
+  width: 300px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__img {
+  width: 5rem;
+}
+
+.card__heading {
+  font-family: 'Big SHoulders Display';
+  font-size: 2.5rem;
+  color: var(--very-light-grey);
+  text-transform: uppercase;
+}
+
+.card__description {
+  flex: 1;
+  color: var(--transparent-white);
+  font-weight: 400;
+}
+
+.card__link {
+  background: var(--very-light-grey);
+  text-decoration: none;
+  text-align: center;
+  align-self: start;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid white;
+  font-size: 0.9rem;
+}
+
+.card__link:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 25rem) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 100%;
+  }
+}
